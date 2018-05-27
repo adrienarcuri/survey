@@ -15,16 +15,16 @@ welcome to our little coding challenge. As you were informed, the survey will ta
 
 > Mandatory:
 
-> 1. There is a bug in the name input dialogue. Find it, fix it, test it
-> 2. The "Next" button on the first activity should be activated only if the user name is entered and stored to the database. Find it, fix it, test it
-> 3. Add a Skill "Software Developer" to the initial skill list.
+> 1. There is a bug in the name input dialogue. Find it, fix it, test it - OK
+> 2. The "Next" button on the first activity should be activated only if the user name is entered and stored to the database. Find it, fix it, test it - OK
+> 3. Add a Skill "Software Developer" to the initial skill list. - OK
 
 
 > Optional:
 
-> 4. Implement a functionality with which the user can insert a skill himself.
-> 5. Implement a functionality with which the user can update a skill.
-> 6. Modify the app to tell your own story you would like to share with futuretek.
+> 4. Implement a functionality with which the user can insert a skill himself. - OK
+> 5. Implement a functionality with which the user can update a skill. - OK
+> 6. Modify the app to tell your own story you would like to share with futuretek. TODO
 
 When you are done, check in your code to a github project of yours, compile a working APK(project/app/build/outputs/apk/app-debug.apk), write a short release-document and mail to challenge@futuretek.ch with the link to your project. Do not amend after you have mailed.
 
