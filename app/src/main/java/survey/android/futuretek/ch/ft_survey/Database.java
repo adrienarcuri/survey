@@ -21,11 +21,13 @@ public class Database extends SQLiteOpenHelper {
 	private static final String database_NAME = "FTSurveyDB";
 	private static final String tableAdminSettings = "admin_settings";
 	private static final String tableSkills = "skills";
+	private static final String tableUserNames = "usernames";
 	private static final String fieldID = "id";
 	private static final String fieldVal = "val";
 
 	private static final String[] COLUMNS = {fieldVal};
 	private static final String[] SKILL_COLUMNS = {fieldID};
+	private static final String[] USERNAME_COLUMNS = {fieldID};
 
 	public Database(Context context) {
 		super(context, database_NAME, null, database_VERSION);
@@ -35,6 +37,7 @@ public class Database extends SQLiteOpenHelper {
 	public void onCreate(SQLiteDatabase db) {
 		db.execSQL("CREATE TABLE "+tableAdminSettings+" (id TEXT PRIMARY KEY NOT NULL, val TEXT NULL)");
 		db.execSQL("CREATE TABLE "+tableSkills+" (id TEXT PRIMARY KEY NOT NULL)");
+		db.execSQL("CREATE TABLE "+tableUserNames+" (id TEXT PRIMARY KEY NOT NULL)");
 	}
 
 	@Override
@@ -148,4 +151,5 @@ public class Database extends SQLiteOpenHelper {
 		db.delete(tableSkills, fieldID + " = ?", new String[] { String.valueOf(id) });
 		db.close();
 	}
+
 }
