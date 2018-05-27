@@ -10,9 +10,10 @@
     <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
-        android:textColor="#ffffff"
         android:layout_height="wrap_content"
-        android:text="Input: " />
+        android:text="@string/input"
+
+        android:textColor="#ffffff" />
 
     <EditText
         android:id="@+id/userInput"
